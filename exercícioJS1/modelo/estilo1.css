@@ -1,0 +1,20 @@
+body{
+background-color: bisque;
+font: normal 15pt Arial;
+}
+header{
+color: darkcyan;
+text-align: center;
+}
+section{
+background-color: brown;
+border-radius: 10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 3px 3px 10px rgba(164, 229, 238, 0.719);
+}
+footer{
+color: darkcyan;
+text-align: center;
+}

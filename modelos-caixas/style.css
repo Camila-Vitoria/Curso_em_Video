@@ -1,0 +1,45 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(112, 221, 185);
+    margin: 0%;
+}
+header{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 2%;
+}
+h1{
+    background-color: #18b1a3;
+    height:40px;
+    width: 400px;
+    border: 5px groove cadetblue;
+    margin: auto;
+    outline: 5px dotted rgba(100, 148, 237, 0.616);
+}
+nav{
+    background-color: rgb(184, 218, 248);
+    
+}
+nav > a{
+   text-decoration: none;
+   margin-right: 15px;
+}
+main{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 2%;
+    border-radius: 0px 10px 0px 10px;
+}
+article{
+    box-shadow: 2px 2px 2px rgb(0, 183, 255);
+    background-color: rgb(196, 222, 245);
+}
+article > aside{
+    padding-top: 2px;
+    text-align: center;
+}
+footer{
+    background-color: rgb(215, 222, 228);
+    text-align: center;
+    margin: 0%;
+}

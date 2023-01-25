@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: bisque;
+            color: rgb(179, 216, 216);
+            font: normal 18pt Arial;
+        }
+        #area{
+            background-color: darksalmon;
+            color: aquamarine;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a trabalhar com <strong>DOM</strong> no JavaScript</p>
+    <div id="area">Interaja...</div>
+    <script>
+          let area= document.getElementById('area')
+          area.addEventListener('click', clicar)
+          area.addEventListener('mouseenter', entrar)
+          area.addEventListener('mouseout', sair)
+        function clicar(){
+             area.innerText='Clicou!'
+             area.style.background= 'blue'
+        }
+        function entrar(){
+            
+             area.innerText='Entrou!'
+        }
+        function sair(){
+         
+             area.innerText='Saiu!'
+             area.style.background ='darksalmon'
+        }
+       
+    </script>
+</body>
+</html>

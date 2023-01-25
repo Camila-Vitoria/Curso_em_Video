@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <h1>País</h1>
+    O seu país é: <input type="text" name="country" id="country">
+    <input type="button" value="Verificar" onclick="pais()">
+    <div id="resultado"></div>
+
+    <script>
+     
+        function calcular(){
+            let txtv = document.getElementById('txtvel')
+            let vel = Number(txtv.value)
+            let res= document.querySelector('div#res')
+            res.innerHTML = `<p>A sua velocidade é ${vel} km/h</p>`
+            if(vel>60){
+                res.innerHTML += `<p>Você está multado</p>`
+            }
+            res.innerHTML +=`<p>Dirija com cuidado</p>`
+        }
+        function pais(){
+            let lugar = document.getElementById('country')
+            let place =(lugar.value)
+            let ressultado= document.querySelector('div#ressultado')
+            resultado.innerHTML = `<p>Você é de ${place}</p>`
+            if(place == 'Brasil'){
+                resultado.innerHTML += `<p>Você é brasileiro(a)</p>`
+            }
+           else{
+            resultado.innerHTML += `<p>Você é gringo(a)</p>`
+           }
+        }
+    </script>
+</body>
+</html>
